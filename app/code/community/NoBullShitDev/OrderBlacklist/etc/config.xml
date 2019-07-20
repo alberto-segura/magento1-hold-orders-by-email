@@ -1,0 +1,25 @@
+<config>
+  <modules>
+    <NoBullShitDev_OrderBlacklist>
+      <version>0.1.0</version>
+    </NoBullShitDev_OrderBlacklist>
+  </modules>
+  <global>
+    <models>
+      <nobullshitdev_orderblacklist>
+        <class>NoBullShitDev_OrderBlacklist_Model</class>
+      </nobullshitdev_orderblacklist>
+    </models>
+    <events>
+      <checkout_onepage_controller_success_action>
+        <observers>
+          <checkFullEmail>
+            <type>singleton</type>
+            <class>NoBullShitDev_OrderBlacklist_Model_Observer</class>
+            <method>checkFullEmail</method>
+          </checkFullEmail>
+        </observers>
+      </checkout_onepage_controller_success_action>
+    </events>
+  </global>
+</config>

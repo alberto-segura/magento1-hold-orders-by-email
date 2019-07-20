@@ -10,3 +10,6 @@ Useful if you're dealing with timeconsuming chargebacks. Quite common on interna
 
 You can save time and money by not dispatching/shipping the order. Just refund/cancel the order and keep selling.
 
+To set the list, you can do that on:
+System - Configuration - Customer - Customer Configuration
+Use a comma "," as a delimeter when more than 1 email address.

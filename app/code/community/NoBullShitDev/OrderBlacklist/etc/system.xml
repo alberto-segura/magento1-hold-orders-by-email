@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+  <tabs>
+    <customer translate="label" module="customer">
+      <label>Customers</label>
+      <sort_order>300</sort_order>
+    </customer>
+  </tabs>
+  <sections>
+    <customer translate="label" module="customer">
+      <groups>
+        <create_account translate="label">
+          <fields>
+            <blocked_emails_list translate="label">
+              <label>List of Email Addresses Not Allowed to Order</label>
+              <comment>Emails in this list will NOT be allowed to place orders.</comment>
+              <frontend_type>text</frontend_type>
+              <sort_order>9999</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </blocked_emails_list>
+          </fields>
+        </create_account>
+      </groups>
+    </customer>
+  </sections>
+</config>
